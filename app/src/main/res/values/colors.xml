@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0051</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF0051</color>
+    <color name="colorText">#000000</color>
+    <color name="colorTextLight">#A5A5A5</color>
+    <color name="colorTextWeather">#039BE5</color>
+    <color name="colorGraph">#4FC3F7</color>
+    <color name="colorBackgroundProgress">#DADADA</color>
+    <color name="colorGood">#28EB7D</color>
+    <color name="colorModerate">#F0A500</color>
+    <color name="colorSensitive">#FF5900</color>
+    <color name="colorUnhealthy">#FF0000</color>
+    <color name="colorVeryUnhealthy">#5900FF</color>
+    <color name="colorHazardous">#5E0303</color>
+    <color name="colorInactive">#D5D5D5</color>
+    <color name="colorCard">#230D58</color>
+</resources>

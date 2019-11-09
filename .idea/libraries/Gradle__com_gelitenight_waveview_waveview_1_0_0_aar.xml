@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.gelitenight.waveview:waveview:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edf43a2389bd3f2337a996ff342a6d89/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edf43a2389bd3f2337a996ff342a6d89/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gelitenight.waveview/waveview/1.0.0/a398737f31cad068acf4fce89d576dc9897cafa8/waveview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/alert_background">
+
+            <uk.co.barbuzz.beerprogressview.BeerProgressView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:beerColor="#438EFF"
+                app:beerProgress="100"
+                app:bubbleColor="#70DDFF"
+                app:bubbleCount="12"
+                app:waveAmplitude="0dp"
+                app:waveMax="100" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Carbon Monoxide"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Carbon monoxide (CO) is a colorless, odorless, and tasteless flammable gas that is slightly less dense than air. It is toxic to animals that use hemoglobin as an oxygen carrier (both invertebrate and vertebrate) when encountered in concentrations above about 35 ppm, although it is also produced in normal animal metabolism in low quantities, and is thought to have some normal biological functions. In the atmosphere, it is spatially variable and short lived, having a role in the formation of ground-level ozone. Carbon monoxide poisoning is the most common type of fatal air poisoning in many countries. Carbon monoxide is colorless, odorless, and tasteless, but highly toxic. It combines with hemoglobin to produce carboxyhemoglobin, which usurps the space in hemoglobin that normally carries oxygen, but is ineffective for delivering oxygen to bodily tissues. Concentrations as low as 667 ppm may cause up to 50% of the body's hemoglobin to convert to carboxyhemoglobin. A level of 50% carboxyhemoglobin may result in seizure, coma, and fatality. In the United States, the OSHA limits long-term workplace exposure levels above 50 ppm."
+                android:textColor="@color/colorText"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/alert_background">
+
+            <uk.co.barbuzz.beerprogressview.BeerProgressView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:beerColor="#438EFF"
+                app:beerProgress="100"
+                app:bubbleColor="#FFBC00"
+                app:bubbleCount="12"
+                app:waveAmplitude="0dp"
+                app:waveMax="100" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Sulfur dioxide"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Sulfur dioxide is the chemical compound with the formula SO2. It is a toxic gas with a burnt match smell. It is edited in a modern way and it is released into a ferrous form of fuels. Sulfur dioxide is a major air pollutant and has significant impacts upon human health. In addition, the concentration of sulfur dioxide in the atmosphere can influence the habitat suitability for plant communities, as well as animal life. Sulfur dioxide emissions are a precursor to acid rain and atmospheric particulates. Due largely to the US EPA’s Acid Rain Program, the U.S. has had a 33% decrease in emissions between 1983 and 2002. This improvement resulted in part from flue-gas desulfurization, a technology that enables SO2 to be chemically bound in power plants burning sulfur-containing coal or oil."
+                android:textColor="@color/colorText"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

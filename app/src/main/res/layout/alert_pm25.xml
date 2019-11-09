@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/alert_background">
+
+            <uk.co.barbuzz.beerprogressview.BeerProgressView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:beerColor="#438EFF"
+                app:beerProgress="100"
+                app:bubbleColor="#4E4E4E"
+                app:bubbleCount="12"
+                app:waveAmplitude="0dp"
+                app:waveMax="100" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Particulates"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Atmospheric aerosol particles – also known as atmospheric particulate matter, particulate matter (PM), particulates, or suspended particulate matter (SPM) – are microscopic solid or liquid matter suspended in the atmosphere of Earth. The term aerosol commonly refers to the particulate/air mixture, as opposed to the particulate matter alone. Sources of particulate matter can be natural or anthropogenic. They have impacts on climate and precipitation that adversely affect human health.
+
+Subtypes of atmospheric particles include suspended particulate matter (SPM), thoracic and respirable particles, inhalable coarse particles, which are coarse particles with a diameter between 2.5 and 10 micrometers (μm) (PM10), fine particles with a diameter of 2.5 μm or less (PM2.5), ultrafine particles, and soot.
+
+The IARC and WHO designate airborne particulates a Group 1 carcinogen. Particulates are the deadliest form of air pollution due to their ability to penetrate deep into the lungs and blood streams unfiltered, causing permanent DNA mutations, heart attacks, respiratory disease, and premature death. In 2013, a study involving 312,944 people in nine European countries revealed that there was no safe level of particulates and that for every increase of 10 μg/m3 in PM10, the lung cancer rate rose 22%. The smaller PM2.5 were particularly deadly, with a 36% increase in lung cancer per 10 μg/m3 as it can penetrate deeper into the lungs. Worldwide exposure to PM2.5 contributed to 4.1 million deaths from heart disease and stroke, lung cancer, chronic lung disease, and respiratory infections in 2016. Overall, ambient particulate matter ranks as the sixth leading risk factor for premature death globally."
+                android:textColor="@color/colorText"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

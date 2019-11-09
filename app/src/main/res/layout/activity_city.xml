@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_city_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".CityActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_view_pm25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/ripple"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.emredavarci.circleprogressbar.CircleProgressBar xmlns:cpb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress_bar_pm25"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        cpb:backgroundColor="@color/colorBackgroundProgress"
+                        cpb:backgroundWidth="3"
+                        cpb:maxValue="100"
+                        cpb:prefix=""
+                        cpb:progressColor="@color/colorPrimary"
+                        cpb:progressText="0"
+                        cpb:progressTextColor="@color/colorText"
+                        cpb:roundedCorners="true"
+                        cpb:strokeWidth="3"
+                        cpb:suffix="%"
+                        cpb:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_pm25_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="PM2.5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_pm25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/maven_pro"
+                    android:gravity="center_vertical"
+                    android:text="N/D"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_view_pm10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.emredavarci.circleprogressbar.CircleProgressBar xmlns:cpb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress_bar_pm10"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        cpb:backgroundColor="@color/colorBackgroundProgress"
+                        cpb:backgroundWidth="3"
+                        cpb:maxValue="100"
+                        cpb:prefix=""
+                        cpb:progressColor="@color/colorPrimary"
+                        cpb:progressText="0"
+                        cpb:progressTextColor="@color/colorText"
+                        cpb:roundedCorners="true"
+                        cpb:strokeWidth="3"
+                        cpb:suffix="%"
+                        cpb:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_pm10_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="PM10"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_pm10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="N/D"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_view_no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/ripple"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.emredavarci.circleprogressbar.CircleProgressBar xmlns:cpb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress_bar_no2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        cpb:backgroundColor="@color/colorBackgroundProgress"
+                        cpb:backgroundWidth="3"
+                        cpb:maxValue="100"
+                        cpb:prefix=""
+                        cpb:progressColor="@color/colorPrimary"
+                        cpb:progressText="0"
+                        cpb:progressTextColor="@color/colorText"
+                        cpb:roundedCorners="true"
+                        cpb:strokeWidth="3"
+                        cpb:suffix="%"
+                        cpb:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_no2_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="NO2"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/maven_pro"
+                    android:gravity="center"
+                    android:text="N/D"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_view_o3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/ripple"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.emredavarci.circleprogressbar.CircleProgressBar xmlns:cpb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress_bar_o3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        cpb:backgroundColor="@color/colorBackgroundProgress"
+                        cpb:backgroundWidth="3"
+                        cpb:maxValue="100"
+                        cpb:prefix=""
+                        cpb:progressColor="@color/colorPrimary"
+                        cpb:progressText="0"
+                        cpb:progressTextColor="@color/colorText"
+                        cpb:roundedCorners="true"
+                        cpb:strokeWidth="3"
+                        cpb:suffix="%"
+                        cpb:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_o3_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="O3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_o3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="N/D"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_view_so2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/ripple"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.emredavarci.circleprogressbar.CircleProgressBar xmlns:cpb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress_bar_so2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        cpb:backgroundColor="@color/colorBackgroundProgress"
+                        cpb:backgroundWidth="3"
+                        cpb:maxValue="100"
+                        cpb:prefix=""
+                        cpb:progressColor="@color/colorPrimary"
+                        cpb:progressText="0"
+                        cpb:progressTextColor="@color/colorText"
+                        cpb:roundedCorners="true"
+                        cpb:strokeWidth="3"
+                        cpb:suffix="%"
+                        cpb:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_so2_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="SO2"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_so2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="N/D"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_view_co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/ripple"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.emredavarci.circleprogressbar.CircleProgressBar xmlns:cpb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress_bar_co"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorText"
+                        cpb:backgroundColor="@color/colorBackgroundProgress"
+                        cpb:backgroundWidth="3"
+                        cpb:maxValue="100"
+                        cpb:prefix=""
+                        cpb:progressColor="@color/colorPrimary"
+                        cpb:progressText="0"
+                        cpb:progressTextColor="@color/colorText"
+                        cpb:roundedCorners="true"
+                        cpb:strokeWidth="3"
+                        cpb:suffix="%"
+                        cpb:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_co_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="CO"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_co"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/maven_pro"
+                    android:text="N/D"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons_view_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/scroll_view"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/button_temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button_active"
+            android:fontFamily="@font/maven_pro"
+            android:text="Temp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/button_pressure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:fontFamily="@font/maven_pro"
+            android:text="Pressure" />
+
+        <Button
+            android:id="@+id/button_humidity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:fontFamily="@font/maven_pro"
+            android:text="Humidity" />
+
+        <Button
+            android:id="@+id/button_wind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:fontFamily="@font/maven_pro"
+            android:text="Wind" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons_view_details"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/maven_pro"
+            android:text="FORECAST 5 DAYS"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/relative_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/maven_pro"
+                android:text="City Name"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/maven_pro"
+                android:text="City Name"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/maven_pro"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/arc_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/maven_pro"
+                app:arc_bottom_text="AQI"
+                app:arc_bottom_text_size="20sp"
+                app:arc_finished_color="@color/colorPrimary"
+                app:arc_max="300"
+                app:arc_progress="0"
+                app:arc_stroke_width="10dp"
+                app:arc_suffix_text=""
+                app:arc_suffix_text_size="0dp"
+                app:arc_text_color="@color/colorPrimary"
+                app:arc_unfinished_color="@color/colorBackgroundProgress" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/loading_indicator"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        app:mk_type="TwinFishesSpinner"
+        app:mk_color="@color/colorAccent"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons_view"
+        android:layout_below="@id/main_view">
+
+        <LinearLayout
+            android:id="@+id/weather_now_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="Temperature"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_temp_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="25"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="Pressure"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_press_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="25"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="Humidity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_humidity_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="25"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="Wind"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_wind_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="25"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="Sunrise"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_sunrise_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="25"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="Sunset"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_sunset_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="25"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <org.eazegraph.lib.charts.ValueLineChart xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cubiclinechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_below="@+id/weather_now_view"
+            android:layout_marginTop="10dp"
+            app:egCurveSmoothness="0.4"
+            app:egIndicatorLineColor="@color/colorAccent"
+            app:egIndicatorTextColor="@color/colorText"
+            app:egLegendHeight="40dp"
+            app:egShowStandardValue="true"
+            app:egUseCubic="true"
+            app:egUseOverlapFill="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

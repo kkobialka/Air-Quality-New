@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:text="Did you know?"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:text="Sentinel species are organisms, often animals, used to detect risks to humans by providing advance warning of a danger. The terms primarily apply in the context of environmental hazards rather than those from other sources. Some animals can act as sentinels because they may be more susceptible or have greater exposure to a particular hazard than humans in the same environment. People have long observed animals for signs of impending hazards or evidence of environmental threats. Plants and other living organisms have also been used for these purposes. The classic example is the canary in the coal mine"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:text="Well into the 20th century, coal miners brought canaries into coal mines as an early-warning signal for toxic gases, primarily carbon monoxide. The birds, being more sensitive, would become sick before the miners, who would then have a chance to escape or put on protective respirators."
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/alert_background">
+
+            <uk.co.barbuzz.beerprogressview.BeerProgressView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:beerColor="#438EFF"
+                app:beerProgress="100"
+                app:bubbleColor="#850000"
+                app:bubbleCount="12"
+                app:waveAmplitude="0dp"
+                app:waveMax="100" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Nitrogen Dioxide"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_new"
+                app:fontFamily="@font/maven_new"
+                android:text="Nitrogen dioxide is the chemical compound with the formula NO
+2. It is one of several nitrogen oxides. NO
+2 is an intermediate in the industrial synthesis of nitric acid, millions of tons of which are produced each year which is used primarily in the production of fertilizers. At higher temperatures it is a reddish-brown gas that has a characteristic sharp, biting odor and is a prominent air pollutant."
+                android:textColor="@color/colorText"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

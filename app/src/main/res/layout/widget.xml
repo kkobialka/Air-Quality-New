@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_location"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warszawa"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Quality Index: "
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/text_aqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_aqi_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:fontFamily="@font/maven_pro"/>
+
+</LinearLayout>
