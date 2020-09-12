@@ -8,10 +8,6 @@ This app is providing live data about particles contamination in the air: PM2.5,
 # About the data
 All the air quality data is provided thanks to aqicn.org API and it's not modified in any way. Weather data provided from Openweathermap. Please check the website to see more details.
 # Screenshots
-![1](https://user-images.githubusercontent.com/43904702/73606648-e8c2e680-45ac-11ea-8d5b-b7d11d8ccf77.png)
-![7](https://user-images.githubusercontent.com/43904702/73606656-fbd5b680-45ac-11ea-9edf-7ed50ea0d4f5.png)
-![2](https://user-images.githubusercontent.com/43904702/73606657-fbd5b680-45ac-11ea-962f-6b8b0d854a77.png)
-![3](https://user-images.githubusercontent.com/43904702/73606658-fbd5b680-45ac-11ea-8bcc-b2a1787b11cf.png)
-![4](https://user-images.githubusercontent.com/43904702/73606659-fc6e4d00-45ac-11ea-952b-f7ea148a2de0.png)
-![5](https://user-images.githubusercontent.com/43904702/73606660-fc6e4d00-45ac-11ea-9c80-e58a9b3eb6a0.png)
-![6](https://user-images.githubusercontent.com/43904702/73606661-fc6e4d00-45ac-11ea-8913-c013749cd199.png)
+![screenshot_1](https://user-images.githubusercontent.com/43904702/92989921-14f5fc80-f4d8-11ea-887e-6ce82b7df2e4.png)
+![screenshot_2](https://user-images.githubusercontent.com/43904702/92989931-27703600-f4d8-11ea-8a83-1c639bb3848d.png)
+![screenshot_3](https://user-images.githubusercontent.com/43904702/92989940-32c36180-f4d8-11ea-874f-f4e5b7d3c16a.png)
